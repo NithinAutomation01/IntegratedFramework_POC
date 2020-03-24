@@ -1,0 +1,4 @@
+Extent report -- Html reporting library 
+
+Documents : http://extentreports.com/docs/versions/3/java/
+Maven Dependency : latest version 3 is available in the POM file
