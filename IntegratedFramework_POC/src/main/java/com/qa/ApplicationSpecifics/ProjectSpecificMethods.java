@@ -1,6 +1,7 @@
 package com.qa.ApplicationSpecifics;
 
 import java.io.IOException;
+import java.util.Random;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,10 +19,9 @@ public class ProjectSpecificMethods extends SeleniumBase {
   
   @BeforeMethod
   public void beforeMethod() {
-	startApp("chrome", "https://www.amazon.in/");
+	  startApp("chrome", "https://www.amazon.in/");
 	node = test.createNode(testcaseName);
   }
-
   @AfterMethod
   public void afterMethod() throws InterruptedException {
 	  close();

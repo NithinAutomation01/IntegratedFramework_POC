@@ -16,6 +16,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,12 +29,13 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.amazon.selenium.design.Browser;
+
 import com.amazon.selenium.design.Element;
 
 import utils.Reporter;
 
 public class SeleniumBase extends Reporter implements Browser,Element{
-
+	
 	public static RemoteWebDriver driver;
 	public static WebDriverWait wait;
 	int i=1;
@@ -498,5 +501,15 @@ public class SeleniumBase extends Reporter implements Browser,Element{
 		driver.findElement(By.xpath(ele)).sendKeys(data,Keys.ENTER);
 		
 	}
+	public static String capture(WebDriver driver) throws IOException {
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File Dest = new File("./ScreenShots/" + System.currentTimeMillis()
+		+ ".png");
+		String errflpath = Dest.getAbsolutePath();
+		FileUtils.copyFile(scrFile, Dest);
+		return errflpath;
+		}
+		
+	
 
 }

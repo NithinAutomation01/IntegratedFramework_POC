@@ -1,5 +1,7 @@
 package com.testCases;
 
+import java.io.IOException;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -18,39 +20,64 @@ public class BasicFlow extends ProjectSpecificMethods{
 	
 	@Test
 	public void tc008(){
-		new AmazonHomePage().tooltipClick().
-		clickMobilesAndComputers().clickLaptops().
-		selectAppleBrand().clickAppleLaptop();
+		try {
+			new AmazonHomePage().tooltipClick().
+			clickMobilesAndComputers().clickLaptops().
+			selectAppleBrand().clickAppleLaptop();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 
 		
 	}
 	@Test
 	public void tc005(){
-		new AmazonHomePage().tooltipClick().
-		clickMobilesAndComputers().clickLaptops().
-		selectAppleBrand().clickAppleLaptop();
+		try {
+			new AmazonHomePage().tooltipClick().
+			clickMobilesAndComputers().clickLaptops().
+			selectAppleBrand().clickAppleLaptop();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 
 		
 	}
 	@Test
 	public void tc001(){
-		new AmazonHomePage().tooltipClick().
-		clickMobilesAndComputers().clickLaptops().
-		selectAppleBrand().clickAppleLaptop();
+		try {
+			new AmazonHomePage().tooltipClick().
+			clickMobilesAndComputers().clickLaptops().
+			selectAppleBrand().clickAppleLaptop();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 	@Test
 	public void tc002(){
-		new AmazonHomePage().tooltipClick().clickTv_Appliances_Electronics()
-		.clickTelevision().clickOneplusTvBrand().testBasePrice();
+		try {
+			new AmazonHomePage().tooltipClick().clickTv_Appliances_Electronics()
+			.clickTelevision().clickOneplusTvBrand().testBasePrice();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 	@Test
 	public void tc003(){
-		new AmazonHomePage().tooltipClick().clickTv_Appliances_Electronics()
-		.clickTelevision().clickOneplusTvBrand().get2DaysDelivery();
+		try {
+			new AmazonHomePage().tooltipClick().clickTv_Appliances_Electronics()
+			.clickTelevision().clickOneplusTvBrand().get2DaysDelivery();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 

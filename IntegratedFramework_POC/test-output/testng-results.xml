@@ -1,29 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10795" started-at="2020-03-25T06:31:49Z" finished-at="2020-03-25T06:32:00Z">
+  <suite name="Default suite" duration-ms="115202" started-at="2020-03-25T11:33:00Z" finished-at="2020-03-25T11:34:55Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="10795" started-at="2020-03-25T06:31:49Z" finished-at="2020-03-25T06:32:00Z">
-      <class name="com.test.ExtentReporting.ExtentDemo">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.ExtentReporting.ExtentDemo@271053e1]" name="startTest" is-config="true" duration-ms="196" started-at="2020-03-25T06:31:49Z" finished-at="2020-03-25T06:31:49Z">
+    <test name="Default test" duration-ms="115202" started-at="2020-03-25T11:33:00Z" finished-at="2020-03-25T11:34:55Z">
+      <class name="com.testCases.MobileFlow">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="startReport" is-config="true" duration-ms="205" started-at="2020-03-25T11:33:00Z" finished-at="2020-03-25T11:33:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="extentReportsDemo()[pri:0, instance:com.test.ExtentReporting.ExtentDemo@271053e1]" name="extentReportsDemo" duration-ms="5792" started-at="2020-03-25T06:31:49Z" finished-at="2020-03-25T06:31:55Z">
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="setData" is-config="true" duration-ms="0" started-at="2020-03-25T11:33:00Z" finished-at="2020-03-25T11:33:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- extentReportsDemo -->
-        <test-method status="PASS" signature="extentReportsDemo_TC002()[pri:0, instance:com.test.ExtentReporting.ExtentDemo@271053e1]" name="extentReportsDemo_TC002" duration-ms="4592" started-at="2020-03-25T06:31:55Z" finished-at="2020-03-25T06:31:59Z">
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="setUpClass" is-config="true" duration-ms="118" started-at="2020-03-25T11:33:00Z" finished-at="2020-03-25T11:33:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- extentReportsDemo_TC002 -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.test.ExtentReporting.ExtentDemo@271053e1]" name="endTest" is-config="true" duration-ms="384" started-at="2020-03-25T06:31:59Z" finished-at="2020-03-25T06:32:00Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="report()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="report" is-config="true" duration-ms="10" started-at="2020-03-25T11:33:00Z" finished-at="2020-03-25T11:33:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- com.test.ExtentReporting.ExtentDemo -->
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="beforeMethod" is-config="true" duration-ms="5979" started-at="2020-03-25T11:33:00Z" finished-at="2020-03-25T11:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC_004_OppoMobileFunctionality()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="TC_004_OppoMobileFunctionality" duration-ms="18967" started-at="2020-03-25T11:33:06Z" finished-at="2020-03-25T11:33:25Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (a8202541ad288233b04524bf39a0fe53)] -> xpath: (//*[contains(text(),'LG')])[2]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.1.25', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a8202541ad288233b04524bf39a0fe53]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (a8202541ad288233b04524bf39a0fe53)] -> xpath: (//*[contains(text(),'LG')])[2]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.1.25', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a8202541ad288233b04524bf39a0fe53
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.amazon.selenium.base.SeleniumBase.click(SeleniumBase.java:47)
+at com.qa.pages.MobilesAndLaptops.MobilesPage.clickOppoMobile(MobilesPage.java:14)
+at com.testCases.MobileFlow.TC_004_OppoMobileFunctionality(MobileFlow.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_004_OppoMobileFunctionality -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="afterMethod" is-config="true" duration-ms="5312" started-at="2020-03-25T11:33:25Z" finished-at="2020-03-25T11:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="beforeMethod" is-config="true" duration-ms="5317" started-at="2020-03-25T11:33:30Z" finished-at="2020-03-25T11:33:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC_005_LGMobileFunctionality()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="TC_005_LGMobileFunctionality" duration-ms="43562" started-at="2020-03-25T11:33:36Z" finished-at="2020-03-25T11:34:19Z">
+          <exception class="java.lang.RuntimeException">
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException
+at com.amazon.selenium.base.SeleniumBase.locateElement(SeleniumBase.java:296)
+at com.qa.pages.MobilesAndLaptops.MobilesPage.clickLGMobile(MobilesPage.java:8)
+at com.testCases.MobileFlow.TC_005_LGMobileFunctionality(MobileFlow.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005_LGMobileFunctionality -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="afterMethod" is-config="true" duration-ms="5074" started-at="2020-03-25T11:34:19Z" finished-at="2020-03-25T11:34:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="beforeMethod" is-config="true" duration-ms="5738" started-at="2020-03-25T11:34:24Z" finished-at="2020-03-25T11:34:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC_006_RealmeMobileFunctionality()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="TC_006_RealmeMobileFunctionality" duration-ms="19755" started-at="2020-03-25T11:34:30Z" finished-at="2020-03-25T11:34:50Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c434a0f434e98b871b435c6779d78018)] -> xpath: (//*[contains(text(),'Realme')])] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.1.25', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c434a0f434e98b871b435c6779d78018]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c434a0f434e98b871b435c6779d78018)] -> xpath: (//*[contains(text(),'Realme')])] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.1.25', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c434a0f434e98b871b435c6779d78018
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.amazon.selenium.base.SeleniumBase.click(SeleniumBase.java:47)
+at com.qa.pages.MobilesAndLaptops.MobilesPage.clickRealmeMobile(MobilesPage.java:19)
+at com.testCases.MobileFlow.TC_006_RealmeMobileFunctionality(MobileFlow.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006_RealmeMobileFunctionality -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="afterMethod" is-config="true" duration-ms="5317" started-at="2020-03-25T11:34:50Z" finished-at="2020-03-25T11:34:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="tearDownClass" is-config="true" duration-ms="11" started-at="2020-03-25T11:34:55Z" finished-at="2020-03-25T11:34:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.testCases.MobileFlow@520a3426]" name="stopReport" is-config="true" duration-ms="360" started-at="2020-03-25T11:34:55Z" finished-at="2020-03-25T11:34:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- com.testCases.MobileFlow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
