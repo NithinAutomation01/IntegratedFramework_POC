@@ -3,21 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testCases.BasicFlow">
+      <class name="com.test.ExtentReporting.ExtentReportingDemowithTestNG">
         <methods>
-          <include name="stopReport"/>
-          <include name="setData"/>
-          <include name="tc003"/>
-          <include name="afterMethod"/>
-          <include name="setUpClass"/>
-          <include name="report"/>
-          <include name="tc001"/>
-          <include name="tc002"/>
           <include name="startReport"/>
-          <include name="beforeMethod"/>
-          <include name="tearDownClass"/>
+          <include name="demotest"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.testCases.BasicFlow -->
+      </class> <!-- com.test.ExtentReporting.ExtentReportingDemowithTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -45,7 +45,7 @@ System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 	driver.get("https://www.google.com/");
 	testFrame.pass("navigated to the google");
 	
-	testFrame.addScreenCaptureFromPath("./ExtentReport/result.jpg");
+	testFrame.addScreenCaptureFromPath("./ExtentReport/result.png");
 	driver.findElement(By.xpath("//*[@name='q']")).sendKeys("Automation ",Keys.ENTER);
 	testFrame.addScreenCaptureFromPath("./Screenshot/testScreensho111t.png");
 	testFrame.pass("Enter the given key values");
