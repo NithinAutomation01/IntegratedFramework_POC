@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.testCases.LaptopFlow">
         <methods>
           <include name="TC_003_AcerLaptopFunctionality"/>
           <include name="stopReport"/>
           <include name="setData"/>
-          <include name="TC_001_AppleLaptopFunctionality"/>
           <include name="afterMethod"/>
           <include name="setUpClass"/>
           <include name="report"/>
-          <include name="runScenario"/>
           <include name="startReport"/>
           <include name="beforeMethod"/>
           <include name="tearDownClass"/>
-          <include name="TC_002_AsusLaptopFunctionality"/>
         </methods>
       </class> <!-- com.testCases.LaptopFlow -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

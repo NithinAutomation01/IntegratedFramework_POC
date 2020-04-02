@@ -3,21 +3,22 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testCases.MobileFlow">
+      <class name="com.testCases.LaptopFlow">
         <methods>
+          <include name="TC_003_AcerLaptopFunctionality"/>
           <include name="stopReport"/>
-          <include name="TC_006_RealmeMobileFunctionality"/>
+          <include name="setData"/>
+          <include name="TC_001_AppleLaptopFunctionality"/>
           <include name="afterMethod"/>
           <include name="setUpClass"/>
           <include name="report"/>
-          <include name="TC_005_LGMobileFunctionality"/>
+          <include name="runScenario"/>
           <include name="startReport"/>
-          <include name="TC_004_OppoMobileFunctionality"/>
           <include name="beforeMethod"/>
           <include name="tearDownClass"/>
-          <include name="setData"/>
+          <include name="TC_002_AsusLaptopFunctionality"/>
         </methods>
-      </class> <!-- com.testCases.MobileFlow -->
+      </class> <!-- com.testCases.LaptopFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

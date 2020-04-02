@@ -17,7 +17,7 @@ public class MobileFlow extends ProjectSpecificMethods{
 		excelFileName="testFile";
 		testcaseName="CertTesing";
 		testcaseDec = "QA testing for Amazon site"; author="Nithin";
-		category="sanity";
+		category="Smoke";
 	}
 
 
